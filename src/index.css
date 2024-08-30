@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+}
+
+.header{
+    margin-top: 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+.CardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/661/973/110/cool-nba-logo-wallpaper-preview.jpg");
+    width: 70%;
+    /* height: 100%; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    /* border: 2px solid red; */
+}
+.card1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* border-radius: 0.5rem; */
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    background-color: white;
+    /* border: 5px solid red; */
+    height: 350px;
+    width: 250px;
+}
+.card1:hover{
+    box-shadow: 0 0 10px black;
+}
+.card1:hover .img_player-card{
+    transform: scale(0.95);
+}
+.text_list{
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playcard_li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.img_player-card{
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    transition: transform 0.9s;
+    padding: 0.5px 0.35px 0 0.5px;
+}
+.name{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(175, 173, 173);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    /* border: 3px solid red; */
+}
+input{
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px black;
+}
